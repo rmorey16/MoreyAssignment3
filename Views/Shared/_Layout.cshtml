@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Joel Hilton Film Collection</title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
+</head>
+
+<body>
+    <h1>@ViewBag.Title</h1>
+
+    <ul>
+        <a asp-action="Index">Home</a>
+        <br />
+        <a asp-action="MovieForm">MovieForm</a>
+        <br />
+        <a asp-action="MovieList">Movie List</a>
+        <br />
+        <a asp-action="MyPodcast">My Podcast</a>
+    </ul>
+
+    @RenderBody()
+
+    <br />
+    <br />
+    <footer>Success Copyright 2021</footer>
+</body>
+</html>
