@@ -8,6 +8,9 @@ namespace MoreyAssignment3.Models
 {
     public class EntryResponse
     {
+        [Key]
+        [Required]
+        public int MovieId { get; set; }
         [Required(ErrorMessage = "Please enter a category")]
         public string Category { get; set; }
         [Required(ErrorMessage = "Please enter a title")]
@@ -22,6 +25,7 @@ namespace MoreyAssignment3.Models
         public string LentTo { get; set; }
         [MaxLength(25)]
         public string Notes { get; set; }
+
 
     }
 }

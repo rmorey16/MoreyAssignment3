@@ -3,25 +3,30 @@
 <head>
     <title>The Joel Hilton Film Collection</title>
     <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="p-2">
     <h1>@ViewBag.Title</h1>
-
-    <ul>
-        <a asp-action="Index">Home</a>
-        <br />
-        <a asp-action="MovieForm">MovieForm</a>
-        <br />
-        <a asp-action="MovieList">Movie List</a>
-        <br />
-        <a asp-action="MyPodcast">My Podcast</a>
-    </ul>
-
-    @RenderBody()
-
+    <div class="bg-dark text-white-50 p-4">
+        <span class="navbar-brand ml-3">
+            <a class="p-2" asp-action="Index">Home</a>
+            <a class="p-2" asp-action="MovieForm">Movie Form</a>
+            <a class="p-2" asp-action="MovieList">Movie List</a>
+            <a class="p-2" asp-action="MyPodcast">My Podcast</a>
+        </span>
+    </div>
     <br />
     <br />
-    <footer>Success Copyright 2021</footer>
+
+        @RenderBody()
+
+     <br />
+     <br />
+     <footer style="background-color:white;">
+         <div class="text-center text-white-50">
+             <span class="card-footer" style="color:black;">Morey Copyright 2021</span>
+         </div>
+     </footer>
 </body>
 </html>
